@@ -31,10 +31,6 @@ const productos = [
 ];
 
 //Ruta para obtener todos los productos
-app.get('/products', (req,res) => {
-    res.json(productos);
-});
-
 // Ruta para obtener los primeros N productos (limit)
 app.get('/products', (req, res) => {
     const limit = parseInt(req.query.limit) || productos.length;
@@ -42,7 +38,7 @@ app.get('/products', (req, res) => {
     console.log("Todo lo de Query: ", req.query);
 
     if (limit > productos.length) {
-        return res.send(`En este momento supera el número de productos en la lista. Solo tenemos los siguientes ${productos.length} productos.`);
+        return res.send(`En este momento supera el número de productos en la lista. Solo tenemos ${productos.length} productos.`);
     } else {
         res.send(productos.slice(0, limit));
     }
