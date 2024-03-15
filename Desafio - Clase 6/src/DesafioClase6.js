@@ -3,7 +3,7 @@ import express from 'express';
 
 
 const app = express();
-const PORT = 8080;
+const PORT = 3000;
 
 app.use(express.urlencoded({extended: true}));
 
@@ -64,7 +64,7 @@ app.listen(PORT, () => {
 
 
 // Rutas
-// http://localhost:8080/products
-// http://localhost:8080/products?limit=5
-// http://localhost:8080/products/2
-// http://localhost:8080/products/34123123
+// http://localhost:3000/products
+// http://localhost:3000/products?limit=5
+// http://localhost:3000/products/2
+// http://localhost:3000/products/34123123

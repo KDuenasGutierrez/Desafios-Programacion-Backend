@@ -1,0 +1,9 @@
+[
+	{
+		"id": 1,
+		"name": "Xbox",
+		"description": "Consola de Video Juegos",
+		"price": "2000",
+		"stock": "1"
+	}
+]
