@@ -6,7 +6,7 @@ export class ProductManager {
       this.file = file;
     }
     
-    async CreateProducts(product) {
+    async CreateProduct(product) {
       const newProduct ={
         id: await this.GetId(),
         name: product.name ?? "Sin Nombre",
@@ -29,7 +29,7 @@ export class ProductManager {
 
     async GetAllProducts() {
       try{
-        const products = await fs.promises.readfile(this.file, "utf-8");
+        const products = await fs.promises.readFile(this.file, "utf-8");
         return JSON.parse(products);
       } catch (error) {
         console.error(error);

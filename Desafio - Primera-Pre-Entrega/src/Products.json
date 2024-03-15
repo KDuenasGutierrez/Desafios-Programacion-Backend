@@ -5,5 +5,12 @@
 		"description": "Consola de Video Juegos",
 		"price": "2000",
 		"stock": "1"
+	},
+	{
+		"id": 2,
+		"name": "Xbox Clasico",
+		"description": "Consola de Video Juegos",
+		"price": "2000",
+		"stock": "1"
 	}
 ]

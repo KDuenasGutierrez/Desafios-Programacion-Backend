@@ -17,7 +17,7 @@ app.get("/api/products",async(req, res)=>{
 });
 
 app.post("/api/products",async(req, res)=>{
-    const response = await UM.CreateProducts(req.body);
+    const response = await UM.CreateProduct(req.body);
 
     res.status(201).send(response);
 });
