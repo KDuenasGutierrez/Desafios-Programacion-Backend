@@ -43,11 +43,11 @@ export class ProductManager {
         let productUpdate = {};
 
         for (let key in products) {
-          if (products[key],id === id ){
-              products[key].name = products.name ? products.name : users[key].name;
-              products[key].description = products.description ? products.description : users[key].description;
-              products[key].price = products.price ? products.price : users[key].price;
-              products[key].stock = products.stock ? products.stock : users[key].stock;
+          if (products[key].id == id ){
+              products[key].name = product.name ? product.name : products[key].name;
+              products[key].description = product.description ? product.description : products[key].description;
+              products[key].price = product.price ? product.price : products[key].price;
+              products[key].stock = product.stock ? product.stock : products[key].stock;
 
               productUpdate = products[key];
           }
